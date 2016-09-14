@@ -19,5 +19,5 @@ URL="http://a0.awsstatic.com/pricing/1/ec2/ri-v2/linux-unix-shared.min.js"
           map(.valueColumns[] | select(.name == "effectiveHourly") | .prices.USD)[]
         )
       ] |
-      join("\t")
+      join(" \t")
       '
